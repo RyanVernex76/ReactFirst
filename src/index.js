@@ -1,19 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import App from './App';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-function CoolComponent({ adjective = 'Cool' }) {
-  return (
-  <p>Youpi So {adjective} !</p>
-  );
-}
 
 
 ReactDOM.render(
   <React.StrictMode>
     <div> 
-    <CoolComponent adjective="SuperCool"/>
+    <App/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')
