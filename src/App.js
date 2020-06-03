@@ -10,6 +10,10 @@ const SYMBOLS = '😀🎉💖🎩🐶🐱🦄🐬🌍🌛🌞💫🍎🍌🍓�
 
 
 class App extends Component {
+  
+  handleCardClick = (card) => {
+    console.log(card, this)
+  }
 
   generateCards() {
     const result = []
@@ -23,7 +27,6 @@ class App extends Component {
   }
 
   cards = this.generateCards()
-
   render() {
     const victoire = new Date().getSeconds() % 2 === 0
 
